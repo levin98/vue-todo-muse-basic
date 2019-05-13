@@ -7,14 +7,21 @@
     <mu-button id="add-button" fab color="teal">
       <mu-icon value="add"></mu-icon>
     </mu-button>
+
+    <!-- Add Todo component -->
+    <Todo />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Todo from "@/components/Todo";
 
 export default {
-  name: "home"
+  name: "home",
+  components: {
+    Todo
+  }
 };
 </script>
 
