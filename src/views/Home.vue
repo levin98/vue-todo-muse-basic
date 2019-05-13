@@ -4,7 +4,7 @@
     <mu-appbar title="Dashboard" color="blue"></mu-appbar>
 
     <!-- Add button -->
-    <mu-button fab color="teal">
+    <mu-button id="add-button" fab color="teal">
       <mu-icon value="add"></mu-icon>
     </mu-button>
   </div>
@@ -19,5 +19,9 @@ export default {
 </script>
 
 <style scoped>
-
+#add-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
 </style>
