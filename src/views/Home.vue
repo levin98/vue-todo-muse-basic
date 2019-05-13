@@ -1,5 +1,8 @@
 <template>
-  <div></div>
+  <div>
+    <!-- Add MuseUI navbar -->
+    <mu-appbar title="Dashboard" color="blue"></mu-appbar>
+  </div>
 </template>
 
 <script>
