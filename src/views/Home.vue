@@ -20,6 +20,7 @@ export default {
 
 <style scoped>
 #add-button {
+  /* Styling for the id add-button */
   position: fixed;
   bottom: 40px;
   right: 40px;
