@@ -3,19 +3,20 @@
     <!-- Muse-ui card component -->
     <mu-card raised>
       <mu-flex class="to-do-wrapper" justify-content="start">
+        <!-- Muse-ui checkbox component -->
         <mu-flex
           class="to-do-checkbox"
           justify-content="start"
           align-self="center"
         >
-          <mu-checkbox v-model="isDone" @change="toggleDone"></mu-checkbox>
+          <mu-checkbox v-model="isDone" value="done"></mu-checkbox>
         </mu-flex>
         <mu-flex
           class="to-do-title"
           justify-content="start"
           align-self="center"
         >
-          <span>Title</span>
+          <span>{{ title }}</span>
         </mu-flex>
       </mu-flex>
     </mu-card>
@@ -24,7 +25,16 @@
 
 <script>
 export default {
-  name: "todo"
+  name: "todo",
+  props: {
+    title: String
+  },
+  // Data for checkbox
+  data() {
+    return {
+      isDone: []
+    };
+  }
 };
 </script>
 
